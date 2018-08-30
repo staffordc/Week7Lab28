@@ -8,7 +8,7 @@ using Week7Lab28.Domain.Models;
 
 namespace Week7Lab28.Data
 {
-    class Week7Lab28Initializer: DropCreateDatabaseAlways<Week7Lab28Context>
+    class Week7Lab28Initializer: DropCreateDatabaseIfModelChanges<Week7Lab28Context>
     {
         protected override void Seed(Week7Lab28Context context) 
         {
