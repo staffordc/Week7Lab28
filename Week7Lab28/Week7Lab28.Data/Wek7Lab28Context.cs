@@ -12,7 +12,7 @@ namespace Week7Lab28.Data
 {
     public class Week7Lab28Context : DbContext
     {
-        public Week7Lab28Context() : base("test")
+        public Week7Lab28Context() : base ("MovieList")
         {
             Database.SetInitializer(new Week7Lab28Initializer());
         }
